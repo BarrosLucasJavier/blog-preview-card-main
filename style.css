@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+}
+/* ----- General ----- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--yellow);
+    font-family: "Figtree", sans-serif;
+    font-size: 16px;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 80px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ----- Card ----- */
+.cardContainer{
+    max-width: 330px;
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: thin solid var(--black);
+    box-shadow: 8px 8px 0px var(--black);
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.cardContainer > img{
+    border-radius: 12px;
+    object-fit: cover;
+    height: 198.75px;
+}
+.cardContainer button{
+    max-width: 5rem;
+    padding: 0.3rem 0.5rem;
+    border: none;
+    background-color: var(--yellow);
+    color: var(--black);
+    font-weight: 800;
+    border-radius: 4px;
+    font-size: 0.7rem;
+}
+.cardContainer p{
+    color: var(--grey);
+    font-size: 0.9rem;
+}
+.cardContainer h1{
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+.avatarContainer{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.avatarContainer h5{
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+.avatarContainer > img{
+    max-width: 32px;
+}
+/* ----- Footer ----- */
+.attribution{
+    text-align: center;
+}
