@@ -61,6 +61,10 @@ main{
     font-weight: 800;
     font-size: 1.4rem;
 }
+.cardContainer h1:hover{
+    color: var(--yellow);
+    cursor: pointer;
+}
 .avatarContainer{
     display: flex;
     align-items: center;
